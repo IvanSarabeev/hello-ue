@@ -141,10 +141,10 @@ export default function SalesAdsList({ ad }) {
 							</Heading>
 							<Text sx={text}>{ad.title}</Text>
 							<Text sx={text && detail}>{ad.description}</Text>
-							<Text sx={text && avatar}>
+							<div sx={text && avatar}>
 								Публикувано от: <Avatar name={ad.author.name} />
 								{ad.author.name}
-							</Text>
+							</div>
 							<Text sx={text}>
 								Цена: {ad.price}лв.
 								<Button marginLeft="2rem" sx={button}>
